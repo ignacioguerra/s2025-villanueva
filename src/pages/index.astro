@@ -1,80 +1,50 @@
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vicu Villanueva - Artista & Comunicadora</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-	<link rel="stylesheet" href="/styles/style.css" />
-  </head>
+---
+import "../layouts/BaseLayout.astro";
+---
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi">SOBRE MI</a></li>
-          <li><a href="http://youtube.com/c/vicuvillanueva">MIS VIDEOS</a></li>
-          <li><a href="https://vicuvillanueva.bandcamp.com/">MI MÚSICA</a></li>
-          <li><a href="http://vicuvillanueva.com/deadspace">DEADSPACE</a></li>
-        </ul>
-      </nav>
-    </header>
+<BaseLayout title="Vicu Villanueva - Artista & Comunicadora">
 
-    <section class="hero">
-      <img src="/vicu.jpg" alt="Foto de Vicu Villanueva" class="banner" />
-      <div class="hero-text">
-        <h1>Vicu Villanueva</h1>
-        <h2>Artista & Comunicadora</h2>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="/vicu.jpg" alt="Foto de Vicu Villanueva" class="banner" />
+
+    <div class="hero-text">
+      <h1>Vicu Villanueva</h1>
+      <h2>Artista & Comunicadora</h2>
+    </div>
+  </section>
+
+
+  <!-- SECCIONES DE ACCESO: MÚSICA / VIDEOS / SOBRE MÍ -->
+  <section class="sections">
+    
+    <!-- MÚSICA -->
+    <a href="/musica" class="section-card">
+      <img src="/disco.jpg" alt="Mi Música">
+      <div class="section-info">
+        <h3>Mi Música</h3>
+        <p>Discos, ambient, sintetizadores y exploraciones sonoras.</p>
       </div>
-    </section>
+    </a>
 
-    <main>
-      <section id="portfolio" class="works">
-        <div class="work">
-          <img src="/disco.jpg" alt="Portada del disco" />
-          <div class="work-info">
-            <h3>Victoria y las Máquinas</h3>
-            <p>
-              Un recorrido por paisajes electrónicos y emociones humanas, entre
-              sintetizadores y voces en loop.
-            </p>
-          </div>
-        </div>
+    <!-- VIDEOS -->
+    <a href="/videos" class="section-card">
+      <img src="/video.jpg" alt="Mis Videos">
+      <div class="section-info">
+        <h3>Mis Videos</h3>
+        <p>Videoensayos, ficciones y experimentos visuales.</p>
+      </div>
+    </a>
 
-        <div class="work">
-          <img src="/ilustracion.png" alt="Ilustración" />
-          <div class="work-info">
-            <h3>Ilustración</h3>
-            <p>
-              Serie visual sobre los animales, la tecnología y los sueños,
-              explorando lo simbólico y lo digital.
-            </p>
-          </div>
-        </div>
+    <!-- SOBRE MÍ -->
+    <a href="/sobre-mi" class="section-card">
+      <img src="/ilustracion.png" alt="Sobre mí">
+      <div class="section-info">
+        <h3>Sobre Mí</h3>
+        <p>Mi recorrido, mi práctica artística y mi universo creativo.</p>
+      </div>
+    </a>
 
-        <div class="work">
-          <a
-            title="Los Tejos"
-            href="https://www.youtube.com/watch?v=cnxeKz4J15s&t=6s"
-          >
-            <img src="/video.jpg" alt="Video" />
-          </a>
-          <div class="work-info">
-            <h3>La Historia del MP3</h3>
-            <p>
-              Serie de videoensayos sobre la historia de la tecnología.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
+  </section>
 
-    <footer>
-      <p>© 2025 Vicu Villanueva</p>
-    </footer>
-  </body>
-</html>
+</BaseLayout>
