@@ -1,5 +1,5 @@
 ---
-import "../styles/estilo.css";
+import "../styles/style.css";
 const { title = "Vicu Villanueva" } = Astro.props;
 ---
 
@@ -21,11 +21,12 @@ const { title = "Vicu Villanueva" } = Astro.props;
     <header>
       <nav>
         <ul>
-          <li><a href="/">INICIO</a></li>
-          <li><a href="/sobre-mi">SOBRE MÍ</a></li>
-          <li><a href="/videos">MIS VIDEOS</a></li>
-          <li><a href="/musica">MI MÚSICA</a></li>
-          <li><a href="/deadspace">DEADSPACE</a></li>
+          <!-- Evitar textos en mayúsculas. Eso se puede hacer con CSS -->
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/sobre-mi">Sobre Mí</a></li>
+          <li><a href="/videos">Mis Videos</a></li>
+          <li><a href="/musica">Mi Música</a></li>
+          <li><a href="/deadspace">Deadspace</a></li>
         </ul>
       </nav>
     </header>

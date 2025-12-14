@@ -1,5 +1,5 @@
 ---
-import "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Vicu Villanueva - Artista & Comunicadora">
@@ -20,7 +20,8 @@ import "../layouts/Layout.astro";
     
     <!-- MÚSICA -->
     <a href="/musica" class="section-card">
-      <img src="/disco.jpg" alt="Mi Música">
+      <!-- Si el texto del alt se repite inmediatamente, puede ser redundante. Es preferible dejarlo como "" o usar una descripción más específica -->
+      <img src="/disco.jpg" alt="">
       <div class="section-info">
         <h3>Mi Música</h3>
         <p>Discos, ambient, sintetizadores y exploraciones sonoras.</p>
@@ -29,7 +30,7 @@ import "../layouts/Layout.astro";
 
     <!-- VIDEOS -->
     <a href="/videos" class="section-card">
-      <img src="/video.jpg" alt="Mis Videos">
+      <img src="/video.jpg" alt="">
       <div class="section-info">
         <h3>Mis Videos</h3>
         <p>Videoensayos, ficciones y experimentos visuales.</p>
@@ -38,7 +39,7 @@ import "../layouts/Layout.astro";
 
     <!-- SOBRE MÍ -->
     <a href="/sobre-mi" class="section-card">
-      <img src="/ilustracion.png" alt="Sobre mí">
+      <img src="/ilustracion.png" alt="">
       <div class="section-info">
         <h3>Sobre Mí</h3>
         <p>Mi recorrido, mi práctica artística y mi universo creativo.</p>
